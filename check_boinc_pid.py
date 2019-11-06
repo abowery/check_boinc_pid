@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
   # Parse the run_state xml file
   is_enabled = 0
-  xmldoc = minidom.parse(project_dir+'run_state_pandia.xml')
+  xmldoc = minidom.parse(project_dir+'run_state_SERVER_NAME.xml')
   state_file = xmldoc.getElementsByTagName('boinc')
   for tag in state_file:
     is_enabled = str(tag.getElementsByTagName('enabled')[0].childNodes[0].nodeValue)
